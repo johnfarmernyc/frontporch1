@@ -1,7 +1,11 @@
 Frontporch1::Application.routes.draw do
+  devise_for :users
   root "pages#home"
 
   get "about" => "pages#about"
+  get "learn_more" => "pages#learn_more"
+  get "find_a_job" => "pages#find_a_job"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
