@@ -17,6 +17,7 @@
       <li><%= link_to "Learn More", learn_more_path %></li>
       <li><%= link_to "Find a Job", find_a_job_path %></li>
         <% if user_signed_in? %>
+          <li><%= link_to "Account", edit_user_registration_path %></li>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
 
         <% else %>
